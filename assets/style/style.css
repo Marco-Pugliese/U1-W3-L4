@@ -65,7 +65,7 @@ header {
   color: black;
 }
 header .bigger {
-  transition: all 0.8s; /*NOT WORKING */
+  transition: all 0.4s;
   font-size: 1.2em;
   color: #ff5e5b;
   font-weight: 700;
