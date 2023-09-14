@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+body {
+  font-family: "DM Serif Display", serif;
+  background-color: #2d3142;
+  background: url(../media/photo-1555505019-8c3f1c4aba5f.jpeg);
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #000000a3;
+  min-height: 100vh;
+  box-shadow: 0px 0px 100px 50px black;
+}
+header {
+  text-align: center;
+  font-size: 2.4em;
+  padding: 80px 0;
+  background-color: #ffffff8b;
+  color: black;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat", sans-serif;
+}
+.created {
+  transition: all 0.8s;
+  text-align: center;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 7.69230769231%;
+
+  background-color: #ff5e5b;
+  color: black;
+}
+#btn-wrap {
+  /* background-color: #ffffff8b; */
+  text-align: center;
+}
+
+#btn {
+  border: none;
+  box-shadow: 0 0 25px 0px rgba(255, 255, 255, 0.683);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: navajowhite;
+  padding: 15px;
+  font-size: 0.9em;
+}
+.selected {
+  background-color: #000000a3;
+  color: #ef8354;
+}
+#personal-card > .created {
+  width: 12.5%;
+}
+#personal-card {
+  margin-top: 30px;
+}
+#cartellone {
+  margin-bottom: 30px;
+}
+.bingo {
+  transition: all 0.8s;
+  background-color: #ff5e5b;
+  color: black;
+}
+header div.bigger {
+  font-size: 1.1em;
+  color: #ff5e5b;
+  font-weight: 700;
+}
+#btn:hover {
+  transition: all 0.8s;
+  cursor: pointer;
+  box-shadow: 0px 0px 45px 2px rgba(234, 237, 29, 0.683);
+}
