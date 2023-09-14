@@ -64,8 +64,9 @@ header {
   background-color: #ff5e5b;
   color: black;
 }
-header div.bigger {
-  font-size: 1.1em;
+header .bigger {
+  transition: all 0.8s; /*NOT WORKING */
+  font-size: 1.2em;
   color: #ff5e5b;
   font-weight: 700;
 }

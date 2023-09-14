@@ -61,7 +61,7 @@ playBtn.addEventListener("click", () => {
     if (restartCount > 0) {
       playBtn.innerText = "Play Again";
       const titleH1 = document.getElementById("title");
-      titleH1.classList.toggle("BIGGER");
+      titleH1.classList.toggle("bigger");
     }
     if (restartCount > 1) {
       const allDivs = document.querySelectorAll("#numbers .created");
