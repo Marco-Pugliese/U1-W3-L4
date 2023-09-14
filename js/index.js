@@ -15,14 +15,21 @@ playBtn.addEventListener("click", () => {
     playBtn.innerText = "EXTRACT";
   }
 });
-let y = 1;
 
+let y = 1;
 playBtn.addEventListener("click", () => {
   if (y < 2) {
     const personalCard = document.getElementById("personal-card");
     for (let i = 0; i < 24; i++) {
       const allDivs = document.createElement("div");
-      allDivs.innerHTML = Math.floor(Math.random() * 77) + 1;
+
+      allDivs.innerText = Math.floor(Math.random() * 77) + 1;
+      for (let y = 0; y < allDivs.length; y++) {
+        if (allDivs[y].innerText === allDivs[i].innerText) {
+          allDivs[y].innerText = Math.floor(Math.random() * 77) + 1;
+        }
+      }
+
       allDivs.classList.add("created");
       allDivs.classList.add("selected");
       personalCard.append(allDivs);
@@ -30,21 +37,20 @@ playBtn.addEventListener("click", () => {
   }
   y++;
 });
-let x = 0;
+let z = 0;
 playBtn.addEventListener("click", () => {
-  if (x > 0) {
+  if (z > 0) {
     const allLeft = document.querySelectorAll("#numbers .selected");
     const x = Math.floor(Math.random() * allLeft.length);
     allLeft[x].classList.remove("selected");
   }
-  x++;
+  z++;
 });
 
-playBtn.addEventListener("click", (e) => {
+playBtn.addEventListener("click", () => {
   const tableValue = document.querySelectorAll("#numbers div:not(.selected)");
   const cardValue = document.querySelectorAll("#personal-card .created");
 
-  // for (let i = 0; i < cardValue.length; i++)
   for (let i = 0; i < tableValue.length; i++) {
     for (let y = 0; y < cardValue.length; y++) {
       if (cardValue[y].innerText === tableValue[i].innerText) {
@@ -72,10 +78,8 @@ playBtn.addEventListener("click", () => {
       for (let y = 0; y < allMyNums.length; y++) {
         allMyNums[y].classList.remove("bingo");
       }
-      const titleH1 = document.getElementById("title");
-
       restartCount = 0;
-      playBtn.innerText = "Press To Start";
+      playBtn.innerText = "Press Start";
     }
   }
 });
